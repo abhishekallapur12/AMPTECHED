@@ -34,8 +34,8 @@ import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const trainingCertUrl = new URL('../assets/training-cert.png', import.meta.url).href;
-const internshipCertUrl = new URL('../assets/internship-cert.png', import.meta.url).href;
+const trainingCertUrl = new URL('../assets/internship-cert.png', import.meta.url).href;
+const internshipCertUrl = new URL('../assets/training-cert.png', import.meta.url).href;
 const certCertUrl = new URL('../assets/cert.png', import.meta.url).href;
 
 const containerVariants = {
@@ -447,7 +447,7 @@ export default function Home() {
               >
                 <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-2xl md:rounded-3xl flex items-center justify-center p-3 md:p-4 shadow-xl border border-slate-50 group-hover:scale-110 transition-transform">
                    <img 
-                     src={cert.name === 'Microsoft' ? 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg' : cert.logo.replace('/white', '/color')} 
+                     src={cert.logo} 
                      alt={cert.name} 
                      className="max-w-full max-h-full object-contain" 
                    />

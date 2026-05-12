@@ -41,7 +41,7 @@ const CERT_TYPES = [
     label: 'Excellence',
     tagline: 'Top performance recognition',
     description: 'Fits resume + LinkedIn. Looks professional across devices.',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-2nfUbJU78xAi00NivW6QgB-9MOJotdz1Q&s',
+     image: certCertUrl,
     color: 'orange'
   }
 ];

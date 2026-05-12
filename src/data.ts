@@ -343,21 +343,21 @@ export const PROGRAMS: Program[] = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: 'Microsoft', logo: 'https://cdn.simpleicons.org/microsoft/00A4EF', description: 'Global leader in cloud and software cloud solutions.' },
-  { name: 'IBM', logo: 'https://cdn.simpleicons.org/ibm/052d65', description: 'Enterprise computing and AI industry standards.' },
-  { name: 'Cisco', logo: 'https://cdn.simpleicons.org/cisco/1ba0d8', description: 'Networking and infrastructure certification authority.' },
-  { name: 'AWS', logo: 'https://cdn.simpleicons.org/amazonaws/232F3E', description: 'Market-leading cloud computing credentials.' },
-  { name: 'Google', logo: 'https://cdn.simpleicons.org/google/4285f4', description: 'Cloud, Data, and Marketing certifications.' },
-  { name: 'Meta', logo: 'https://cdn.simpleicons.org/meta/0668e1', description: 'Digital marketing and front-end engineering.' },
-  { name: 'Adobe', logo: 'https://cdn.simpleicons.org/adobe/ff0000', description: 'Creative design and digital experience standards.' },
-  { name: 'Autodesk', logo: 'https://cdn.simpleicons.org/autodesk/0696d7', description: 'Engineering design and 3D modeling.' },
-  { name: 'Apple', logo: 'https://cdn.simpleicons.org/apple/000000', description: 'Swift development and ecosystem design.' },
-  { name: 'Unity', logo: 'https://cdn.simpleicons.org/unity/000000', description: 'Game development and real-time 3D.' },
-  { name: 'Oracle', logo: 'https://cdn.simpleicons.org/oracle/f80000', description: 'Database and enterprise Java systems.' },
-  { name: 'SAP', logo: 'https://cdn.simpleicons.org/sap/008fd3', description: 'Enterprise resource planning and management.' },
-  { name: 'Intel', logo: 'https://cdn.simpleicons.org/intel/0071c5', description: 'Edge AI and hardware-level computing.' },
-  { name: 'NVIDIA', logo: 'https://cdn.simpleicons.org/nvidia/76b900', description: 'Deep learning and GPU-accelerated computing.' },
-  { name: 'Salesforce', logo: 'https://cdn.simpleicons.org/salesforce/00A1E0', description: 'CRM and cloud enterprise solutions.' },
+  { name: 'Microsoft', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoft.svg', description: 'Global leader in cloud and software cloud solutions.' },
+  { name: 'IBM', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ibm.svg', description: 'Enterprise computing and AI industry standards.' },
+  { name: 'Cisco', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cisco.svg', description: 'Networking and infrastructure certification authority.' },
+  { name: 'AWS', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/aws.svg', description: 'Market-leading cloud computing credentials.' },
+  { name: 'Google', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/google.svg', description: 'Cloud, Data, and Marketing certifications.' },
+  { name: 'Meta', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/meta.svg', description: 'Digital marketing and front-end engineering.' },
+  { name: 'Adobe', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/adobe.svg', description: 'Creative design and digital experience standards.' },
+  { name: 'Autodesk', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/autodesk.svg', description: 'Engineering design and 3D modeling.' },
+  { name: 'Apple', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apple.svg', description: 'Swift development and ecosystem design.' },
+  { name: 'Unity', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/unity.svg', description: 'Game development and real-time 3D.' },
+  { name: 'Oracle', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/oracle.svg', description: 'Database and enterprise Java systems.' },
+  { name: 'SAP', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/sap.svg', description: 'Enterprise resource planning and management.' },
+  { name: 'Intel', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/intel.svg', description: 'Edge AI and hardware-level computing.' },
+  { name: 'NVIDIA', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/nvidia.svg', description: 'Deep learning and GPU-accelerated computing.' },
+  { name: 'Salesforce', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/salesforce.svg', description: 'CRM and cloud enterprise solutions.' },
 ];
 
 export const TESTIMONIALS = [
@@ -387,15 +387,25 @@ export const TESTIMONIALS = [
   }
 ];
 
-export const PARTNER_LOGOS = [
-  { name: 'TCS', logo: 'https://cdn.simpleicons.org/tata/646464' },
-  { name: 'Infosys', logo: 'https://cdn.simpleicons.org/infosys/007cc3' },
-  { name: 'Wipro', logo: 'https://cdn.simpleicons.org/wipro/000000' },
-  { name: 'Accenture', logo: 'https://cdn.simpleicons.org/accenture/a100ff' },
-  { name: 'Capgemini', logo: 'https://cdn.simpleicons.org/capgemini/0070ad' },
-  { name: 'Cognizant', logo: 'https://cdn.simpleicons.org/cognizant/0033a0' },
-  { name: 'IBM', logo: 'https://cdn.simpleicons.org/ibm/052d65' },
-  { name: 'Deloitte', logo: 'https://cdn.simpleicons.org/deloitte/86bc25' },
-  { name: 'Tech Mahindra', logo: 'https://cdn.simpleicons.org/techmahindra/e41b1d' },
-  { name: 'HCL', logo: 'https://cdn.simpleicons.org/hcltech/00569c' }
+const createTextLogo = (text: string, bg = '#0f172a') =>
+  `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160"><rect width="100%" height="100%" fill="${bg}" /><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="700">${text}</text></svg>`
+  )}`;
+
+export interface PartnerLogo {
+  name: string;
+  logo: string;
+}
+
+export const PARTNER_LOGOS: PartnerLogo[] = [
+  { name: 'TCS', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tcs.svg' },
+  { name: 'Infosys', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/infosys.svg' },
+  { name: 'Wipro', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wipro.svg' },
+  { name: 'Accenture', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/accenture.svg' },
+  { name: 'Capgemini', logo: createTextLogo('CG', '#00629B') },
+  { name: 'Cognizant', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cognizant.svg' },
+  { name: 'IBM', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ibm.svg' },
+  { name: 'Deloitte', logo: createTextLogo('D', '#00A99D') },
+  { name: 'Tech Mahindra', logo: createTextLogo('TM', '#FF1A43') },
+  { name: 'HCL', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/hcl.svg' }
 ];

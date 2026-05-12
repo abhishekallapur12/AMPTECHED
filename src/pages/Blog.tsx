@@ -25,7 +25,7 @@ export default function Blog() {
       author: 'Sarah Jenkins',
       date: 'May 05, 2026',
       readTime: '12 min read',
-      image: 'https://images.unsplash.com/photo-1523240715630-991f2e811eb9?q=80&w=600&auto=format&fit=crop'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPXLkb8yqQxEHx7ZdljcnJk1ryh45INupw&s'
     },
     {
       id: 3,
