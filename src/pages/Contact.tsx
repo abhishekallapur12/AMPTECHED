@@ -62,10 +62,10 @@ export default function Contact() {
              
              <div className="flex flex-col gap-8">
                 {[
-                  { icon: Phone, label: 'Pune Helpline', value: '+91 9373305074', desc: '+91 9372029295' },
-                  { icon: Phone, label: 'Vijayapura Helpline', value: '+91 9922686404', desc: '+91 7676944821' },
+                  { icon: Phone, label: 'Pune Helpline', value: '+91 7676832037', desc: '+91 7676832037' },
+                  { icon: Phone, label: 'Vijayapura Helpline', value: '+91 7760839088', desc: '+91 7760839088' },
                   { icon: Mail, label: 'Email Support', value: 'contact@amptech.co.in', desc: 'amphardsoft@gamil.com' },
-                  { icon: Mail, label: 'Branch Email', value: 'bijapur@amptech.co.in', desc: 'Vijayapura Support' },
+                  { icon: Mail, label: 'Branch Email', value: '', desc: 'Vijayapura Support' },
                 ].map((item, idx) => (
                   <motion.div 
                     key={item.label} 
@@ -198,7 +198,7 @@ export default function Contact() {
                         Haveli, Pune 411017.
                      </p>
                      <div className="flex flex-col gap-2">
-                        <p className="font-bold text-slate-700 flex items-center gap-2"><Phone size={14} className="text-primary" /> +91 9373305074 / 9372029295</p>
+                        <p className="font-bold text-slate-700 flex items-center gap-2"><Phone size={14} className="text-primary" /> +91 7676832037 / 7760839088</p>
                         <p className="font-bold text-slate-700 flex items-center gap-2"><Mail size={14} className="text-primary" /> contact@amptech.co.in</p>
                      </div>
                   </div>

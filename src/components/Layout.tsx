@@ -419,16 +419,16 @@ export default function Layout() {
                   <p className="text-slate-900 uppercase tracking-tighter mb-2 italic">Pune (Head Office)</p>
                   <p className="text-[10px] leading-relaxed italic opacity-80 mb-3">Rahatani, Pimpri Chinchwad, Pune 411017</p>
                   <div className="flex flex-col gap-1 text-[11px]">
-                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> +91 9373305074</p>
-                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> +91 9372029295</p>
+                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> +91 7676832037</p>
+                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> +91 7760839088</p>
                   </div>
                </div>
                <div>
                   <p className="text-slate-900 uppercase tracking-tighter mb-2 italic">Vijaypura (Branch)</p>
                   <p className="text-[10px] leading-relaxed italic opacity-80 mb-3">Satya Sai Nagar, Vijayapura 586102</p>
                   <div className="flex flex-col gap-1 text-[11px]">
-                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> +91 9922686404</p>
-                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> +91 7676944821</p>
+                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> </p>
+                     <p className="flex items-center gap-2"><Phone size={12} className="text-primary" /> </p>
                   </div>
                </div>
             </div>
